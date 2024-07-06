@@ -1,13 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-// import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <RouterView />
+  <div class="main bg-[#9838F8]">
+    <div class="container h-full">
+      <div class="filter h-full"></div>
+    </div>
+  </div>
 </template>
 
-<style lang="scss">
+
+<style lang="scss" scoped>
 .main {
   height: 300vh;
   background-image: url("@/assets/images/bg.png");

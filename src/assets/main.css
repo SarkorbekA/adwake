@@ -1,35 +1,92 @@
-@import './base.css';
+@import './fonts.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Involve', sans-serif;
 }
 
-a,
-.green {
+li {
+  list-style: none;
+}
+
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+body {
+  background: #FFFFFF;
+  min-width: 380px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+img {
+  user-select: none;
+}
+
+.container {
+  /* max-width: 1260px !important; */
+  padding: 0 15px;
+  margin: auto;
+}
+
+.filter {
+  background-color: #d8b9ffd6;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  min-width: 360px;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  background-color: #FFFFFF;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #06496E;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+h1 {
+  font-family: 'Press';
+  /* text-shadow: 0px 0px 1.5px #000000; Смещение по горизонтали, смещение по вертикали, размытие, цвет тени */
+  text-shadow:
+    -1.5px -1.5px 0 #000000,
+    /* Верхний левый */
+    1.5px -1.5px 0 #000000,
+    /* Верхний правый */
+    -1.5px 1.5px 0 #000000,
+    /* Нижний левый */
+    1.5px 1.5px 0 #000000;
+  /* Нижний правый */
+  ;
 }
